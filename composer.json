@@ -1,0 +1,19 @@
+{
+    "name": "ith/phpbasico",
+    "description": "Taller basico de php",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Julio Rodriguez",
+            "email": "juliorr@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "phpbasico\\": "src/"
+        }
+    }
+}
