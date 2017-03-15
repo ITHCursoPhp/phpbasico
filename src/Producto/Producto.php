@@ -1,7 +1,7 @@
 <?php
 namespace phpbasico\Producto;
 
-class Producto
+class Producto extends ProductoAbstract
 {
     private $descripcion;
     private $id;
@@ -40,5 +40,10 @@ class Producto
     public function setPrecio(float $precio)
     {
         $this->precio = $precio;
+    }
+
+    public function getDueno() : string
+    {
+        return "Tu eres el dueno";
     }
 }
