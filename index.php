@@ -1,6 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
-
+// este es un cometnario para practicar git
 use phpbasico\Producto\Producto;
 use phpbasico\Caja\Caja;
 use phpbasico\Almacen\Almacen;
