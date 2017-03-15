@@ -1,7 +1,11 @@
 <?php
 namespace test\Almacen;
 
-class AlmacenTest extends PHPUnit_Framework_TestCase
+use phpbasico\Almacen\Almacen;
+use phpbasico\Producto\Producto;
+use PHPUnit\Framework\TestCase;
+
+class AlmacenTest extends TestCase
 {
     private $sut;
 
@@ -11,7 +15,7 @@ class AlmacenTest extends PHPUnit_Framework_TestCase
     {
         parent::setUp();
         $this->sut = new Almacen();
-        $this->producto = $this->getMock(Producto::class);
+        $this->producto = $this->createMock(Producto::class);
     }
 
     protected function tearDown()
